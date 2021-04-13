@@ -45,7 +45,6 @@
     "build": "gatsby build",
     "heroku-postbuild": "gatsby build",
     "serve": "gatsby serve",
-    "start": "gatsby serve",
     "postinstall": "node ./bin/hello.js",
     "setup": "node ./bin/setup.js",
     "netlify:login": "netlify login",
