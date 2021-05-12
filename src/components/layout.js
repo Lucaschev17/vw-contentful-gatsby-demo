@@ -11,7 +11,7 @@ class Template extends React.Component {
       <Container>
         <Navigation />
         {children}
-        2021 - Fait un peu tard j'avoue.
+        2021
       </Container>
     )
   }
