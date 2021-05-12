@@ -17,6 +17,18 @@ jobs:
           name: Build
           command: npm run build
       - run:
+          name: Commit
+          command: git config --global user.email "lucaschev17@gmail.com"
+      - run:
+          name: Commit
+          command: git config --global user.name "Lucaschev17"
+      - run:
+          name: Commit
+          command: git add .
+      - run:
+          name: Commit
+          command: git commit -m "Contentful update"
+      - run:
           name: Deploy
           command: git push --force https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
       - save_cache:
